@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&family=Notable">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+         <style>
+             body {
+                 margin: 0;
+                 padding: 0;
+                 direction: rtl;
+                 font-family: cairo,sans-serif;
+             }
+             header {
+                 background-color: #99F552;
+                 height: 60px;
+                 max-width: 100%;
+                 position: relative;
+             }
+             header span:first-of-type {
+              font-family: cairo,sans-serif;
+              position: absolute;
+              top: 15%;
+              left: 30px;
+              background: #CB3362;
+              padding: 5px;
+              color: #fff;
+              cursor: pointer;
+          }
+          header span:nth-of-type(2) {
+              font-family: cairo,sans-serif;
+              position: absolute;
+              top: 15%;
+              right: 30px;
+              background: #CB3362;
+              padding: 5px;
+              color: #fff;
+              cursor: pointer;
+          }
+             header h2 {
+                 text-align: center;
+                 font-size: 40px;
+                 color: #fff;
+             }
+             article {
+                width: 100%;
+                height: 600px;
+                background:url('./images/delivery.jpg');
+                background-size: cover;
+                background-position: center;
+             }
+             form {
+                float: left;
+                width: 50%;
+                background: rgba(0,0,0,0.5);
+                text-align: center;
+                height: 100%;
+                font-family: cairo,sans-serif;
+            }
+            form label {
+                display: block;
+                font-size: 30px;
+                color: #fff;
+                background-color:#CB3362 ;
+                padding: 10px;
+            }
+            form input {
+               width: 80%;
+               margin-top: 10px;
+               padding: 20px;
+               font-size: 20px;
+           }
+           form textarea {
+              width: 80%;
+              height: 200px;
+              margin-top: 20px;
+              font-size: 20px; 
+           }      
+            form input[type="file"] {
+                margin-top: 10px;
+            }
+            form input[type="submit"] {
+              width: 20%;
+              float: left;
+              background: #CB3362;
+              outline: 0;
+              border: 0;
+              color: #fff;
+              cursor: pointer;
+            }
+            @media (max-width:769px){
+                form {
+                float: none;
+                width: 100%;
+            } 
+            }
+         </style>
+    </head>
+    <body>
+        <header>
+            <h2>تواصل معنا</h2>
+            <span onclick='javascript()'>ارجع إلي الوراء</span>
+            <span onclick="Home()">الرئيسية</span>
+        </header>
+        <article>
+            <form class='animate__animated animate__backInRight' action="https://formspree.io/mdowwbbg" method="post">
+                <label>استمارة طلب أوردر</label>
+                <input type='text' name='username' placeholder="اسم الكريم" required="">
+                <input type='text' name='email' placeholder="البريد الإلكتروني" required="">
+                <input type='number' name='phone' placeholder="رقم الهاتف للتواصل" required="">
+                <textarea name="message">ادخل طلباتك:
+                </textarea>
+                <input type='file' name='code'>
+                <input type="submit" value="إرسال" name="submit">
+            </form>
+        </article>
+        <script>
+            var mybtn = document.querySelector('span');
+            var myform = document.querySelector('form');
+            function javascript() {
+                'use strict';
+                window.history.back();
+            }
+            function Home(){
+             'use strict';
+            window.location.href = "food-index.html";
+            }
+        </script>
+    </body>
+</html>

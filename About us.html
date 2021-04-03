@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo">
+        <style>
+          body {
+              margin: 0;
+              padding: 0;
+              font-family: cairo,sans-serif;
+          }
+          header {
+              max-width: 100%;
+              height: 60px;
+              background-color: #99F550;
+              position: relative;
+          }
+          header h2 {
+              text-align: center;
+              color: #fff;
+              font-size:30px;
+              font-family: cairo,sans-serif;
+          }
+          header span:first-of-type {
+              font-family: cairo,sans-serif;
+              position: absolute;
+              top: 15%;
+              left: 30px;
+              background: #CB3362;
+              padding: 5px;
+              color: #fff;
+              cursor: pointer;
+          }
+          header span:nth-of-type(2) {
+              font-family: cairo,sans-serif;
+              position: absolute;
+              top: 15%;
+              right: 30px;
+              background: #CB3362;
+              padding: 5px;
+              color: #fff;
+              cursor: pointer;
+          }
+          article {
+              width: 100%;
+              height: 100%;
+              background:url('./images/About US cover.png') no-repeat;
+              background-size: cover;
+              background-position: center;
+          }
+          article {
+              margin: 0;
+          }
+          article .art-content {
+              float: right;
+              width: 50%;
+              background:rgba(0,0,0,0.4);
+              height: 100%;
+              text-align: center;
+          }
+          article .art-content h2 {
+              font-size: 40px;
+              color: #fff;
+              margin-top: 20%;
+          }
+          article .art-content p {
+              font-size: 30px;
+              color: #fff;
+              margin-top: 20px;
+          }
+          article .art-content button {
+              font-size: 30px;
+              margin-top: 20px;
+              background-color: #CB3362;
+              padding: 10px;
+              border: 0;
+              cursor: pointer;
+          }
+          article .art-content button a {
+              color: #fff;
+              text-decoration: none;
+          }
+          @media (max-width:769px) {
+            article .art-content h2 {
+              margin-top: 0;
+              padding: 50px;
+          }
+            article .art-content {
+                width: 100%;
+                float:none;
+            }
+          }
+ 
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>من نحن</h2>
+            <span onclick="javascript()">ارجع إلي الوراء</span>
+            <span onclick="Home()">الرئيسية</span>
+        </header>
+        <article>
+            <div class='art-content'>
+                <h2>موقع مطبخ أمي</h2>
+                <p>
+                    نقدم لكم في موقعنا أفضل الحلويات اللذيذة والأيس كريم من صنع أمي بأرخص الأسعار
+                </p>
+                <button><a href="Blog.html">يمكنك الذهاب من هنا لتتعرف علي أسعار منتجاتنا</a></button>
+            </div>
+        </article>
+    <script>
+        function javascript() {
+            window.history.back();
+        }
+        function Home(){
+            window.location.href = "food-index.html";
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&family=Notable">
+        <style>
+        * {
+            box-sizing: border-box;
+        }
+        *,*:before,*:after {
+            margin: 0;
+            padding: 0;
+          } 
+        body {
+            direction: rtl;
+            font-family: cairo,sans-serif;
+        }
+        header {
+            max-width: 100%;
+            height: 60px;
+            background-color: #98F550;
+            position: relative;
+        }
+        header h2 {
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+        }
+        header span:first-of-type{
+              position: absolute;
+              top: 15%;
+              left: 30px;
+              background: #CB3362;
+              padding: 5px;
+              color: #fff;
+              cursor: pointer;
+        }
+        header span:nth-of-type(2) {
+              font-family: cairo,sans-serif;
+              position: absolute;
+              top: 15%;
+              right: 30px;
+              background: #CB3362;
+              padding: 5px;
+              color: #fff;
+              cursor: pointer;
+          }
+        .artical {
+            background-color: #eee;
+        }
+        .art-content {
+            width: 100%;
+            height: auto;
+            float: right;
+        }
+        .art-content .box-content {
+            width: 32%;
+            float: right;
+            height: auto;
+            background: #fff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 1px 1px 20px 4px #222;
+            margin-right: 1%;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .art-content .box-content:hover {
+            animation:swing 3s ease-in-out 1;
+        }
+        @keyframes swing {
+            0% {
+                transform: rotateX(0);
+            }
+            20% {
+                transform: rotateX(30deg);
+
+            }
+            40% {
+                transform: rotateX(-30deg);
+
+            }
+            60% {
+                transform: rotateX(60deg);
+            }
+            80% {
+                transform: rotateX(-60deg);
+            }
+            100% {
+                transform: rotateY(0);
+            }
+        }
+
+        .art-content .box-content img {
+            width: 100%;
+            height: 200px;
+        }
+        .art-content .box-content h3 {
+           font-size: 20px;
+           margin-bottom: 20px;
+           color: #CB3362;
+         }
+         .art-content .box-content p {
+           font-size: 16px;
+           margin-bottom: 10px;
+         }
+         .art-content .box-content .price {
+             color: #fff;
+             background-color: #CB3362;
+             padding: 10px;
+             text-align: center;
+             font-size: 20px;
+             z-index:1;
+         } 
+         @media (max-width:1120px) {
+          .art-content .box-content {
+            width: 49%;
+            float: right;
+        }        
+     }
+         @media (max-width:769px){
+        .art-content .box-content {
+            width: 100%;
+            float: none;
+        }
+     }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2> قائمة الأسعار</h2>
+            <span onclick="javascript()">ارجع إلي الوراء</span>
+            <span onclick="Home()">الرئيسية</span>
+        </header>
+        <div class='artical'>
+                <div class="art-content">
+                    <div class="box-content">
+                        <img src='images/blackberry.jpg'>
+                        <h3>ايس كريم ميديام بالفراولة </h3>
+                        <p>احصل الآن علي ايس كريم ميديام بالفراولة والتوت اللذيذ من مطبخ أمي </p>
+                        <div class='price'>السعر : 10 جنيه</div>
+                    </div>
+                    <div class="box-content" >
+                        <img src='images/blueberry.jpg'>
+                        <h3>ايس كريم ماكس بالفراولة </h3>
+                        <p>احصل الآن علي ايس كريم ماكس بالفراولة والتوت اللذيذ من مطبخ أمي </p>
+                        <div class='price'>السعر : 20 جنيه</div>
+                    </div>
+                    <div class="box-content">
+                        <img src='images/grapes.jpg'>
+                        <h3>ايس كريم ميديام بالفواكه </h3>
+                        <p>احصل الآن علي ايس كريم ميديام بالفواك المتنوعة من مطبخ أمي </p>
+                        <div class='price'>السعر : 30 جنيه</div>
+                    </div>
+                    <div class="box-content">
+                        <img src='images/green-apple.jpg'>
+                        <h3>ايس كريم ماكس بالفواكه </h3>
+                        <p>احصل الآن علي ايس كريم ماكس بالفواكه المتنوعة </p>
+                        <div class='price'>السعر : 40 جنيه</div>
+                    </div>
+                    <div class="box-content">
+                        <img src='images/cantaloupe.jpg'>
+                        <h3>ايس كريم ميديام بالكنتلوب </h3>
+                        <p>احصل الآن علي ايس كريم ميديام بالكنتلوب من مطبخ أمي </p>
+                        <div class='price'>السعر : 10 جنيه</div>
+                    </div>
+                    <div class="box-content">
+                        <img src='images/yogurt.jpg'>
+                        <h3>عصير فراولة بالبن والفراولة</h3>
+                        <p>احصل الآن علي عصير فراولة باللبن من مطبخ أمي </p>
+                        <div class='price'>السعر : 10 جنيه</div>
+                    </div>  
+                    <div class="box-content">
+                        <img src='images/kiwi.jpg'>
+                        <h3>ايس كريم ماكس كيوى </h3>
+                        <p>احصل الآن علي ايس كريم ماكس كيوي من مطبخ أمي </p>
+                        <div class='price'>السعر : 10 جنيه</div>
+                    </div>   
+                    <div class="box-content">
+                        <img src='images/on-diet.png'>
+                        <h3>مكسرات </h3>
+                        <p> مكسرات متنوعة تشمل (فول سوداني - عين جمل - لوز ) من مطبخ أمي </p>
+                        <div class='price'>السعر : 100 جنيه</div>
+                    </div>   
+                    <div class="box-content">
+                        <img src='images/berries.png'>
+                        <h3>ايس كريم حجم كبير بالتوت والفروالة والكريز </h3>
+                        <p>احصل الآن علي ايس كريم حجم كبير بالتوت والفروالة والكريز من مطبخ أمي </p>
+                        <div class='price'>السعر : 50 جنيه</div>
+                    </div>   
+                    <div class="box-content">
+                        <img src='images/mango.jpg'>
+                        <h3>ايس كريم ماكس بالمانجا </h3>
+                        <p>احصل الآن علي ايس كريم ماكس بالمانجا من مطبخ أمي </p>
+                        <div class='price'>السعر : 40 جنيه</div>
+                    </div>   
+                    <div class="box-content">
+                        <img src='images/strwberry-delights.jpg'>
+                        <h3> أقوى  طبق فواكه متنوعة باللبن </h3>
+                        <p>  عرض خاص علي أقوى طبق فواكه متنوعة باللبن من مطبخ أمي </p>
+                        <div class='price'>السعر : 30 جنيه</div>
+                    </div>   
+                    <div class="box-content">
+                        <img src='images/halwa.jpg'>
+                        <h3> طبخ فواكه </h3>
+                        <p> عرض خاص لفترة محدودة احصل الآن علي طبق فواكه متنوعة من مطبخ أمي </p>
+                        <div class='price'>السعر : 15 جنيه</div>
+                    </div>   
+                </div>
+            </div>
+       <script>
+         function javascript() {
+            window.history.back();
+        }
+        function Home(){
+            window.location.href = "food-index.html";
+        }
+       </script>
+    </body>
+</html>
