@@ -22,5 +22,9 @@ A site is a landing page that displays a range of sweets and delicious foods wit
 5. use formspree tools for send form data to Email
 6. media qaury
 
+## update Template version 2.0.0
+* Edit header section
+* fix some errors
+
 ## website live
 https://2020abdullah.github.io/myfirstproject/food-index.html
