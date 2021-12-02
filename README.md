@@ -27,4 +27,4 @@ A site is a landing page that displays a range of sweets and delicious foods wit
 * fix some errors
 
 ## website live
-https://2020abdullah.github.io/myfirstproject/food-index.html
+https://2020abdullah.github.io/my-project-1/
